@@ -1,19 +1,21 @@
 ﻿console.log("Website läuft.");
 
-// Mobile Menu Toggle
+// Mobile-Menü auf-/zuklappen (Button nur auf schmalen Bildschirmen sichtbar, siehe styles.css)
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
 if (mobileMenuBtn) {
   mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    const isOpen = navLinks.classList.toggle('active');
+    mobileMenuBtn.setAttribute('aria-expanded', isOpen);
   });
 }
 
-// Close mobile menu when a link is clicked
+// Mobile-Menü schließen, sobald ein Link angeklickt wurde
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('active');
+    mobileMenuBtn?.setAttribute('aria-expanded', 'false');
   });
 });
 
