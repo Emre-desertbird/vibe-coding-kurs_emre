@@ -1,5 +1,4 @@
-﻿# Meine Vibe-Coding-Website
-
+﻿# Vibe Coding Kurs Website
 Diese Website wurde im Vibe-Coding-Kurs mit VS Code, Continue und GitHub Pages erstellt.
 
 ## Die drei Dateien
@@ -18,7 +17,7 @@ Diese Website wurde im Vibe-Coding-Kurs mit VS Code, Continue und GitHub Pages e
 
 Je genauer diese drei Punkte sind, desto genauer wird das Ergebnis. Ein Beispiel-Prompt:
 
-> "Ändere die Hero-Section in index.html so, dass sie für ein Café wirbt.
+> "Ändere die Hero-Section in index.html so, dass sie für den Vibe Coding Kurs wirbt.
 > Behalte Struktur und CSS-Klassen bei, ändere nur die Texte."
 
 ## Wo ändere ich was?
@@ -30,3 +29,4 @@ Je genauer diese drei Punkte sind, desto genauer wird das Ergebnis. Ein Beispiel
 | Eine Karte hinzufügen/entfernen      | index.html | `<article>`-Block in `.cards` kopieren/löschen |
 | Einen Menüpunkt hinzufügen           | index.html | neuen `<a href="#id">` in `.nav-links` + passende `<section id="id">` |
 | Rundungen/Abstände ändern            | styles.css | `--radius` in `:root`, bzw. `padding`-Werte |
+
